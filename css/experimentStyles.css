@@ -1,0 +1,47 @@
+/* line 1, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/experimentStyles.scss */
+.paper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 9999; }
+
+/* line 8, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/experimentStyles.scss */
+.topCross {
+  background: orange;
+  height: 100; }
+
+/* line 13, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/experimentStyles.scss */
+.fancyText {
+  position: absolute;
+  left: calc(50% + 10px);
+  top: 10px;
+  width: 160px;
+  text-align: justify; }
+
+/* line 21, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/experimentStyles.scss */
+.bigCornerText {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 15%;
+  text-align: justify;
+  margin: 0; }
+
+/* line 30, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/experimentStyles.scss */
+.bigCornerText:after {
+  content: "";
+  display: inline-block;
+  width: 100%; }
+
+/* line 36, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/experimentStyles.scss */
+.sidePic {
+  background-image: url("http://blog.phmuseum.com/wp-content/uploads/2012/12/Kishin-3-600x400.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 20%; }
+
+/*# sourceMappingURL=experimentStyles.css.map */

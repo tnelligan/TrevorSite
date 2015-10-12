@@ -1,0 +1,106 @@
+/* line 5, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+/* line 11, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+main {
+  flex: 1 0 auto; }
+
+/* line 15, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.waves-effect.waves-primary .waves-ripple {
+  background-color: #000000;
+  opacity: .6; }
+
+/* line 20, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+a {
+  font-size: 30; }
+
+/* line 24, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+span {
+  font-size: 30; }
+
+/* line 28, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+mark {
+  color: #E8A000 !important;
+  background: none; }
+
+/* line 33, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+nav {
+  background-color: #FFFFFF;
+  margin: 0; }
+
+/* line 38, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.details {
+  margin: 0;
+  margin-top: 15; }
+
+/* line 43, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.details > li {
+  display: inline; }
+
+/* line 47, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.button-collapse {
+  float: right !important; }
+
+/* line 51, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.name-title {
+  color: #000000;
+  font-weight: 200; }
+
+/* line 56, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.title-interest {
+  margin: 0;
+  text-align: left; }
+
+/* line 61, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.parallax-container {
+  height: auto;
+  min-height: 200px;
+  margin: 0; }
+
+/* line 67, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.parallax > img {
+  max-width: 100%; }
+
+/* line 71, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.mission-zone {
+  margin: 0;
+  padding: 15px;
+  background-color: #FFFFFF;
+  color: #000000; }
+
+/* line 78, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.hammond-zone {
+  display: flex;
+  background-color: #eeeeee;
+  padding: 15; }
+
+/* line 84, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.srl-people {
+  background-color: #FFFFFF; }
+
+/* line 88, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.one-one {
+  padding-bottom: 100%;
+  width: 100%;
+  background-color: #eee;
+  position: relative; }
+
+/* line 94, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+.one-one > div {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-size: contain !important; }
+
+/* line 104, C:/Users/TREVOR/Documents/GitHub/TrevorSite/css/styles.scss */
+footer.page-footer {
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0; }
+
+/*# sourceMappingURL=styles.css.map */

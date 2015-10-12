@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <title></title>
+  <!-- Material CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/experimentStyles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="../bower_components/paper/dist/paper-full.js"></script>
+  
+  <script type="text/paperscript" canvas="myCanvas">
+  
+    var maxDimension = view.size.width;
+    var handOut = [500, -50];
+    var handIn = [-500, -50];
+    
+    function onResize(event) {
+        // Whenever the window is resized, recenter the path:
+    }
+    
+    var firstSegment = new Segment({
+        point: [view.bounds.left+20, view.bounds.bottom/2+20],
+        handleOut: [-500, 50]
+    });
+
+    var secondSegment = new Segment({
+        point: view.bounds.rightCenter,
+        handleIn: [-500, -50]
+    });
+    
+    var bigpath = new CompoundPath({
+        children: [
+            new Path.Ellipse({
+                center: [view.bounds.center.x-50, view.bounds.center.y-450],
+                radius: maxDimension/1.9
+            }),
+            new Path.Ellipse({
+                center: [view.bounds.center.x-50, view.bounds.center.y-450],
+                radius: maxDimension/1.9-25
+            })
+        ],
+        fillColor: 'black',
+        selected: false
+    });
+
+    
+    
+    var box = new Shape.Rectangle({
+        from: [view.bounds.topLeft.x+30, view.bounds.topLeft.y],
+        to: [view.bounds.bottomRight.x-85, view.bounds.bottomRight.y],
+        fillColor: 'blue',
+        opacity: .6
+    });
+    
+    var group = new Group(box, bigpath);
+    group.clipped = true;
+      
+    
+    
+    
+    
+    var design = new PointText(new Point(view.bounds.rightCenter.x-65, view.bounds.topRight.y+80));
+    design.justification = 'center';
+    design.font= 'Open Sans Condensed';
+    design.fillColor = 'black';
+    design.content = 'TREVOR NELLIGAN';
+    
+    design.rotate(90);
+    
+    
+  </script>
+</head>
+
+<body>
+  
+  <main>
+    <canvas class="paper" id="myCanvas" resize>
+    </canvas>
+    
+    <div class="sidePic"></div>
+    
+    <div class="fancyText">
+      Lorem ipsum dolor sit amet, ut idque quando has, id per adhuc oratio nusquam, saepe principes concludaturque vel ea
+    </div>
+    
+    <h1 class="bigCornerText">
+      T N
+    </h1>
+    
+    <div>
+      NELLIGAN
+      DESIGN
+    </div>
+    
+  </main>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+  
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+    });
+  </script>
+
+</body>
+
+</html>

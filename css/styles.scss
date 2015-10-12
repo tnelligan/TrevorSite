@@ -1,0 +1,108 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #000000;
+$secondary-color: #E8A000;
+
+body {
+	display: flex; 
+	min-height: 100vh; 
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.waves-effect.waves-primary .waves-ripple {
+	background-color: $primary-color;
+	opacity: .6;
+}
+
+a {
+    font-size: 30;
+}
+
+span {
+    font-size: 30;
+}
+
+mark {
+	color: $secondary-color !important;
+	background: none;
+}
+
+nav {
+	background-color: #FFFFFF;
+	margin: 0;
+}
+
+.details {
+    margin: 0;
+    margin-top: 15;
+}
+
+.details > li {
+    display: inline;
+}
+
+.button-collapse {
+	float: right !important;
+}
+
+.name-title {
+	color: $primary-color;
+	font-weight: 200;
+}
+
+.title-interest {
+	margin: 0;
+	text-align: left;
+}
+
+.parallax-container {
+	height:auto; 
+	min-height: 200px; 
+	margin:0;
+}
+
+.parallax > img {
+	max-width: 100%;
+}
+
+.mission-zone {
+	margin:0;
+	padding: 15px;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+.hammond-zone {
+	display:flex;
+	background-color: #eeeeee;
+	padding:15;
+}
+
+.srl-people {
+	background-color: #FFFFFF;
+}
+
+.one-one {
+    padding-bottom: 100%;
+    width: 100%;
+    background-color:#eee;
+    position:relative;
+}
+.one-one > div {
+    position:absolute;
+    top:5px;
+    bottom:5px;
+    left:5px;
+    right:5px;
+    background-size: contain !important;
+}
+
+
+footer.page-footer {
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}

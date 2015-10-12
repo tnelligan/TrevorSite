@@ -1,0 +1,95 @@
+<html>
+
+<head>
+  <title></title>
+  <!-- Material CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/experimentStyles.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="../bower_components/paper/dist/paper-full.js"></script>
+  
+  <script type="text/paperscript" canvas="myCanvas">
+  
+    var maxDimension = view.size.width;
+    
+    var topBlock = new Shape.Rectangle({
+      from: view.bounds.center,
+      to: [40,40],
+      strokeColor: 'black'
+    });
+    
+    /*var text = new PointText(new Point(50, 140));
+      text.font = 'Helvetica, arial, sans-serif';
+      text.content = 'RCA\nWork in\nProgress';
+      text.fontSize = 140;
+      text.fillColor = 'white';
+      text.fillColor.alpha = 0;
+      text.strokeColor = 'white';
+      text.strokeWidth = 3;
+      text.leading = 120;
+      text.spacing = 2;
+
+      var randomValues = [];
+      for (var i = 0; i < 10; i++) {
+        randomValues.push(Math.random()/2 + 0.5);
+      }
+
+      var prevTime = +new Date();
+      var elapsedTime = 0;
+
+      view.onFrame = function(event) {
+        var currentTime = +new Date();
+        var deltaTime = currentTime - prevTime;
+        prevTime = currentTime;
+        elapsedTime += deltaTime;
+
+        for (var i = 0; i < 10; i += 2) {
+            text.dashArray[i] = -Math.cos(elapsedTime / 2500. * randomValues[i]) * 200 + 200; // stroke length
+            text.dashArray[i + 1] = Math.sin(elapsedTime / 1000. * randomValues[i+1]) * 400 + 400; // gap length
+        }
+        text.dashOffset = Math.cos(elapsedTime / 1000) * 10 - 10;
+      }*/
+
+    
+    
+  </script>
+</head>
+
+<body>
+  
+  <main>
+    <canvas class="paper" id="myCanvas" resize>
+    </canvas>
+    
+    <div class="sidePic"></div>
+    
+    <div class="fancyText">
+      Lorem ipsum dolor sit amet, ut idque quando has, id per adhuc oratio nusquam, saepe principes concludaturque vel ea
+    </div>
+    
+    <h1 class="bigCornerText">
+      T N
+    </h1>
+    
+    <div>
+      NELLIGAN
+      DESIGN
+    </div>
+    
+  </main>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+  
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+    });
+  </script>
+
+</body>
+
+</html>
